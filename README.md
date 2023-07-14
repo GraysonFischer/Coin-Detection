@@ -2,7 +2,7 @@
 
 The intention of my project was to catigorize different types of coins from around the world.
 
-![add image descrition here](direct image link here)
+![Screenshot 2023-07-14 101543](https://github.com/GraysonFischer/Coin-Detection/assets/139392197/9005cb24-decf-445a-9ed9-50c0fefb4dc6)
 
 ## The Algorithm
 
@@ -10,7 +10,7 @@ To start, I found a file with lots of different pictures of all different coins.
 
 ## Running this project
 
-1. Categorize the different images into the test, train, and val files. When running epochs, the computer will look throught the train file. When you pick a picture you want to test from the test file, it will look into the val file for recognitions between the two images and try and determin when type of coin it is. `imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/labels.txt data/coins_images/test/us_coins/1a1f6fe1c9.jpg` is the code I would use to test a picutre, here's how it works. First, we have to tell the computer where to go to get this picture, which is in the `coins_images` folder. So we would do `data` > `coins_images` > `test` > `us_coins` (or whatever coin you want)
+1. Categorize the different images into the test, train, and val files. When running epochs, the computer will look throught the train file. When you pick a picture you want to test from the test file, it will look into the val file for recognitions between the two images and try and determin when type of coin it is. `imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/labels.txt data/coins_images/test/us_coins/1a1f6fe1c9.jpg` is the code I would use to test a picutre, here's how it works. First, we have to tell the computer where to go to get this picture, which is in the `coins_images` folder. So we would do `data` > `coins_images` > `test` > `us_coins` (or whatever coin you want). After the image is done loading, it should give you a class and a percent, the percent reprecent its cerenty to the class and the class is the type of coin it in.
 
 2. Make sure to include any required libraries that need to be installed for your project to run.
 
